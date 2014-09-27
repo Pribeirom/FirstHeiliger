@@ -14,6 +14,10 @@ int main(int argc, char* argv[])
 	std::cout << "main.cpp started!\n";
 	
 	sdl->init(); //will be replaced to Game class
+	sdl->loadImage(sdl->getResourcePath("img/ship.png"), "ship"); //will be replaced to Game class
+	sdl->drawImage("ship"); //will be replaced to Game class
+	
+	sdl->clean(); //will be replaced to Game class
 	
 	return 0;
 }
