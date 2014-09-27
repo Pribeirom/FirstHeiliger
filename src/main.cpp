@@ -15,7 +15,10 @@ int main(int argc, char* argv[])
 	
 	sdl->init(); //will be replaced to Game class
 	sdl->loadImage(sdl->getResourcePath("img/ship.png"), "ship"); //will be replaced to Game class
-	sdl->drawImage("ship"); //will be replaced to Game class
+	sdl->clearCanvas();
+	sdl->drawImage("ship",50,50,5); //will be replaced to Game class
+	sdl->presentCanvas();
+	SDL_Delay(2000);
 	
 	sdl->clean(); //will be replaced to Game class
 	
