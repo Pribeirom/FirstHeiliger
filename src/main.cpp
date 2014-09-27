@@ -5,22 +5,13 @@
 	up together to form the game.
 */
 #include <iostream>
-
-#include "SDLManager.h" //will be replaced to Game class
-#define sdl SDLManager::getInstance() //will be replaced to Game class
+#include "HeiligerGame.h"
 
 int main(int argc, char* argv[])
 {
 	std::cout << "main.cpp started!\n";
 	
-	sdl->init(); //will be replaced to Game class
-	sdl->loadImage(sdl->getResourcePath("img/ship.png"), "ship"); //will be replaced to Game class
-	sdl->clearCanvas();
-	sdl->drawImage("ship",50,50,5); //will be replaced to Game class
-	sdl->presentCanvas();
-	SDL_Delay(2000);
-	
-	sdl->clean(); //will be replaced to Game class
+	HeiligerGame game = new HeiligerGame();
 	
 	return 0;
 }
