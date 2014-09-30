@@ -38,6 +38,7 @@ public:
 	bool loadImage(std::string filePath, std::string nameRef);
 	void drawImage(std::string nameRef, int x = 0, int y = 0, double r = 0.0, double xScale = 1.0, double yScale = 1.0, SDL_Point* center = nullptr, SDL_RendererFlip flipFlag = SDL_FLIP_NONE);
 	
+	//destructor
 	~SDLManager(){};
 private:
 	//singleton pattern
@@ -50,6 +51,7 @@ private:
 	//image management (loading, drawing, etc.)
 	std::map<std::string, SDL_Texture*> imageMap;
 	
+	//constructor
 	SDLManager(){};
 };
 

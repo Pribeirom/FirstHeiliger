@@ -9,13 +9,13 @@
 class HeiligerGame
 {
 public:
+	void init();
+	void mainLoop();
+	void changeGameState(std::string nameRef);
+
 	//constructor and destructor
 	HeiligerGame(){};
 	~HeiligerGame(){};
-
-	void init();
-	void changeGameState(std::string nameRef);
-
 private:
 
 }
