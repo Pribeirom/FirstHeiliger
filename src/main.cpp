@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 {
 	std::cout << "main.cpp started!\n";
 	
-	HeiligerGame game = new HeiligerGame();
+	//HeiligerGame game = new HeiligerGame();
 	
 	return 0;
 }
